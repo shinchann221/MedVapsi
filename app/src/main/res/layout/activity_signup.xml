@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".signup">
+
+
+    <ImageView
+        android:id="@+id/registerlogo"
+        android:layout_width="291dp"
+        android:layout_height="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/ic_med_vapsi_logo" />
+
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerlogo"
+        android:layout_marginStart="40sp"
+        android:text="REGISTER"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/fname_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_text"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="25sp"
+        android:text="First Name"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname_txtv"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/lname_textv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Last Name"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname_textv"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/mobile_textv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Mobile Number"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_textv"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:inputType="phone"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/email_textv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Email"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_textv"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:backgroundTint="#000"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/password_textv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_register"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_textv"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:backgroundTint="#000"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/submit"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="172dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/password_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/sq_border"
+        android:text="Register"
+        android:textColor="#000" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="86dp"
+        android:layout_height="82dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

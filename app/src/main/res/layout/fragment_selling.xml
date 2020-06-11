@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selling_bg"
+    tools:context=".SellingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Sell Your Medicines"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/drug_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:text="Drug:"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="37dp"
+            android:layout_toEndOf="@+id/drug_t"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/company_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drug_t"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="27dp"
+            android:text="Company: "
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drug"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/company_t"
+            android:textColor="#000"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/date_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_t"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="31dp"
+            android:text="Expiry Date:"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/date_t"
+            android:textColor="#000"
+            android:focusable="false"/>
+
+
+        <TextView
+            android:id="@+id/txt_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="Dosage Form ( Select One)"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+        <RadioGroup
+            android:id="@+id/formgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rg"
+            android:layout_margin="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solid ( Tablet, Capsule )"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liquid ( Syrup, Suspension)"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semi Solid ( Cream , Lotion ) " />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formgroup"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:text="Choose from"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/typegroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_type"
+            android:layout_margin="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used Medicine"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unused Medicine"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expired Medicine"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typegroup"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/border"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
